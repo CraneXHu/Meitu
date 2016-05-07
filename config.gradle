@@ -1,0 +1,25 @@
+ext {
+    android = [compileSdkVersion : 23,
+               buildToolsVersion : "23.0.0",
+               applicationId     : "me.pkhope.meitu",
+               minSdkVersion     : 14,
+               targetSdkVersion  : 22,
+               versionCode       : 1,
+               versionName       :"1.0"]
+
+    dependencies = ["appcompat-v7"          : "com.android.support:appcompat-v7:23.1.1",
+                    "recyclerview-v7"       : "com.android.support:recyclerview-v7:23.1.1",
+                    "retrofit"              : "com.squareup.retrofit2:retrofit:2.0.2",
+                    "rxjava"                : "io.reactivex:rxjava:1.1.0",
+                    "rxandroid"             : "io.reactivex:rxandroid:1.0.1",
+                    "okhttp"                : "com.squareup.okhttp3:okhttp:3.0.1",
+                    "pod"                   : "com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.1",
+                    "butterknife"           : "com.jakewharton:butterknife:7.0.1",
+                    "picasso"               : "com.squareup.picasso:picasso:2.5.2",
+                    "glide"                 : "com.github.bumptech.glide:glide:3.6.1",
+                    "litepal"               : "org.litepal.android:core:1.2.1",
+                    "nineoldandroids"       : "com.nineoldandroids:library:2.4.0",
+                    "Gson"                  : "com.squareup.retrofit2:converter-gson:2.0.2",
+                    "rxjava-adapter"        : "com.squareup.retrofit2:adapter-rxjava:2.0.2",
+                    "jsoup"                 : "org.jsoup:jsoup:1.9.1"]
+}
