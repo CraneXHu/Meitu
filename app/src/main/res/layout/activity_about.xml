@@ -68,6 +68,8 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
                 android:paddingLeft="8dp"
+                android:autoLink="web"
+                android:textIsSelectable="true"
                 android:text="@string/app_about"/>
         </LinearLayout>
 

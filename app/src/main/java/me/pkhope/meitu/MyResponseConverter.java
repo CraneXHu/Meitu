@@ -32,6 +32,10 @@ public class MyResponseConverter<T> implements Converter<ResponseBody,T> {
                 }
                 ImageData img = new ImageData();
                 img.imageUrl = url;
+                int index = url.indexOf(".com") + 4;
+                String start = url.substring(0,index);
+                String end = url.substring(index).replace("m","l");
+                img.imageUrlLarge = start + end;
                 imgs.add(img);
             }
 

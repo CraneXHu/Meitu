@@ -6,5 +6,6 @@ package me.pkhope.meitu;
 public class ImageData {
 
     String imageUrl;
+    String imageUrlLarge;
 
 }

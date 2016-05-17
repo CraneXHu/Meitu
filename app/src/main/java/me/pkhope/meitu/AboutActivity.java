@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.pkhope.meitu.R;
+import me.pkhope.meitu.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 public class AboutActivity extends AppCompatActivity{
 
     @Bind(R.id.toolbar)
-    Toolbar mToolBar;
+    Toolbar mToolbar;
     @Bind(R.id.collapsing_toolbar)
     CollapsingToolbarLayout mCollapsingToolbarLayout;
 
@@ -32,9 +32,9 @@ public class AboutActivity extends AppCompatActivity{
 
         mCollapsingToolbarLayout.setTitle(getString(R.string.app_name));
 
-        setSupportActionBar(mToolBar);
+        setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        mToolBar.setNavigationOnClickListener(new View.OnClickListener() {
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.jakewharton.picasso.OkHttp3Downloader;
-import com.pkhope.meitu.R;
+import me.pkhope.meitu.R;
 import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
@@ -27,12 +27,14 @@ import okhttp3.Response;
 /**
  * Created by pkhope on 2016/5/5.
  */
-public class MeiTuAdapter extends RecyclerView.Adapter<MeiTuAdapter.MeiTuViewHolder>{
+public class MeiTuAdapter extends RecyclerView.Adapter<MeiTuAdapter.MeiTuViewHolder> {
 
     private List<ImageData> mList;
     private Context mContext;
 
     private ImageDownloader mImageDownloader;
+
+    private OnPicTouchListener mOnPicTouchListener;
 
     public MeiTuAdapter(Context context,List<ImageData> list) {
         super();
@@ -51,6 +53,7 @@ public class MeiTuAdapter extends RecyclerView.Adapter<MeiTuAdapter.MeiTuViewHol
     @Override
     public void onBindViewHolder(MeiTuViewHolder holder, int position) {
         ImageData data = mList.get(position);
+        holder.mData = data;
 
 //        Glide.with(mContext)
 //                .load(data.imageUrl)
@@ -69,10 +72,16 @@ public class MeiTuAdapter extends RecyclerView.Adapter<MeiTuAdapter.MeiTuViewHol
         return mList.size();
     }
 
-    public class MeiTuViewHolder extends RecyclerView.ViewHolder{
+    public void setOnPicTouchListener(OnPicTouchListener listener){
+        mOnPicTouchListener = listener;
+    }
+
+    public class MeiTuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         @Bind(R.id.item_iv)
         ImageView imageView;
+
+        ImageData mData;
 
 //        @Bind(R.id.item_tv)
 //        TextView textView;
@@ -80,6 +89,12 @@ public class MeiTuAdapter extends RecyclerView.Adapter<MeiTuAdapter.MeiTuViewHol
         public MeiTuViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this,itemView);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v){
+            mOnPicTouchListener.onTouch(v,imageView,mData);
         }
     }
 
