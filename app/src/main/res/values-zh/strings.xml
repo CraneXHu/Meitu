@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meitu</string>
+    <string name="app_about">这是一款简洁的图片浏览应用，完全开源，图片来自于优美图。\n\n 我的Github : https://github.com/pkhope</string>
+    <string name="action_about">关于</string>
+</resources>

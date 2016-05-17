@@ -21,5 +21,6 @@ ext {
                     "nineoldandroids"       : "com.nineoldandroids:library:2.4.0",
                     "Gson"                  : "com.squareup.retrofit2:converter-gson:2.0.2",
                     "rxjava-adapter"        : "com.squareup.retrofit2:adapter-rxjava:2.0.2",
-                    "jsoup"                 : "org.jsoup:jsoup:1.9.1"]
+                    "jsoup"                 : "org.jsoup:jsoup:1.9.1",
+                    "design"                : "com.android.support:design:22.2.1"]
 }
