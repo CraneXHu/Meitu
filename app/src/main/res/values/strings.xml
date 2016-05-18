@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Meitu</string>
     <string name="app_about">This is a simple app for browse picture which are from topit \n\n My Github : https://github.com/pkhope</string>
+    <string name="save_picture">save pictuer?</string>
+    <string name="save_failed">save failed</string>
+    <string name="save_succeed">save succeed</string>
     <string name="action_about">About</string>
+    <string name="action_share">Share</string>
 </resources>
