@@ -3,3 +3,6 @@
 
  ![image](https://github.com/pkhope/Meitu/blob/master/meitu1.png)
  ![image](https://github.com/pkhope/Meitu/blob/master/meitu2.png)
+
+#说明
+这个应用参考了drakeet的meizhi应用.
